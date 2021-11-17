@@ -40,7 +40,7 @@
 #introtitle{
 	font-family: "bongers", cursive;
 	text-align: center;
-	font-size: 250%
+	font-size: 250%;
 
 	
 
@@ -48,8 +48,8 @@
 
 #intro{
 	font-family: "bongers", cursive;
-	font-size:200%;
-	font-style:bold
+	font-size:225%;
+	font-style:bold;
 	text-align:right;
 
 }

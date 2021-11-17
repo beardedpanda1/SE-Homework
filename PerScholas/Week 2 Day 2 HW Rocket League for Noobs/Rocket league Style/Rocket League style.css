@@ -1,0 +1,72 @@
+
+#Home{
+	width: 99vw;
+	height: 93vh;
+	background-image: url(https://steamuserimages-a.akamaihd.net/ugc/80339917954151566/3CB9761163B46FC5F38B822CCD28E7AE9AEFBAB5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+
+}
+
+#titlehome{
+	height:100%;
+	width:100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "bongers", cursive;
+	font-size:300%;
+	color: white;
+
+}
+
+#navbar{
+	
+	width:99vw;
+	text-align: center;
+	font-family: "bongers", cursive;
+	font-size: 150%;
+	padding:0px 0px;
+	background-color: orange;	
+
+}
+
+#allintro{
+	width: 99vw;
+	height: 99vh;
+	background-image: linear-gradient(orange,blue)
+}
+
+#introtitle{
+	font-family: "bongers", cursive;
+	text-align: center;
+	font-size: 250%
+
+	
+
+}
+
+#intro{
+	font-family: "bongers", cursive;
+	font-size:200%;
+	font-style:bold
+	text-align:right;
+
+}
+
+#tutorial{
+	font-family: "bongers", cursive;
+	font-size:200%;
+	font-style:bold;
+	text-align: center;
+	width: 99vw;
+	height: 99vh;
+	background-image: linear-gradient(orange,blue)
+}
+
+#tutotrialhead{
+	font-family: "bongers", cursive;
+	font-size:225%;
+	font-style:bold
+	text-align:center;
+}

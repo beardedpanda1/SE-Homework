@@ -1,0 +1,29 @@
+.red{
+    display: flex; /*NEED THIS FOR BOXES*/
+    /*border: 1px solid red; THIS BECOMES OBSOLETE ONCE YOU ADDED BACKGROUND COLOR*/
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition-duration: 500ms;
+    transition-delay:50ms;
+  }
+  
+  .blue{
+    display:flex; /*NEED DISPLAY FLEX TO MAKE BOXES AND MUST HAVE A PARENT CONTAINER*/
+    /*border: 1px solid blue; OBSOLETE DUE TO BACKGROUND COLOR*/
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: blue;
+    transition-duration: 2000ms;
+    transition-delay: 500ms;
+  }
+  
+  #boxes:hover .red{
+    width: 200px;
+  }
+  
+  #boxes:hover .blue{
+    width: 200px;
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search an Array</title>
+        <h1>Search an Array</h1>
+    </head>
+    <body>
+            <p id="results1">results</p>
+            <p id="results2">results2</p>
+    
+<script>
+    let userInput= Number(prompt("Enter number here: "))
+    let userInput2= prompt("Enter color here: ").toLowerCase()
+    let numCount=0
+       
+    arr1= [1,2,2,3,1,2,4,2,4]
+    
+
+    function countArr (userInput, arr1)
+    
+    {
+        let numCount = 0
+        for (i=0; i<=arr1.length; i++)
+
+    {
+        if(userInput== arr1[i]){
+            numCount++
+        }
+    }
+}
+
+let arr1Count = countArr (3,arr1)
+document.getElementById("results1").innerHTML= arr1Count
+
+let arr2Count= countArr(userInput2,arr2)
+document.getElementById("results2").innerHTML= arr2Count
+
+</script>
+</body>
+</html>

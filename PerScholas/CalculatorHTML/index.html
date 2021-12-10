@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> Simple Calculator using HTML, CSS and JavaScript </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button{
+            background-color: darkgray;
+            border-radius: 50%;
+            color: white;
+            width: 75px;
+            height: 75px;
+            font-size: larger;
+
+        }
+        .op{
+            background-color:rgb(252,165,4);
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            font-size: larger;
+
+        }
+
+        .num{
+            background-color:lightgrey;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            font-size: larger;
+        }
+
+        .power{
+            background-color:rgb(253,75,75);
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            font-size: larger;
+        }
+
+        .name{
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .display-box{
+            width: 400px;
+            height: 70px;
+        }
+        
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="name">
+    <h1>Simple Calculator</h1>
+    </div>
+    <table class = "calculator">
+        <tr>
+            <td colspan="4"><input class = "display-box" type = "text" id = "result" disabled /></td>
+        </tr>
+        
+        <tr>
+            <td> <button class = "button" value = "AC" onclick = "clearScreen()">AC</button></td>
+            <td> <button class = "button" value = "neg" onclick = "display('-')">+/-</button></td>
+            <td> <button class = "button" value = "%" onclick = "display('%')">%</button></td>
+            <td> <button class = "op" value = "/" onclick = "display('/')">/</button></td>
+        </tr>
+        <tr>
+            <td> <button class = "num" value = "7" onclick = "display('7')">7</button> </td>
+            <td> <button class = "num" value = "8" onclick = "display('8')">8</button> </td>
+            <td> <button class = "num" value = "9" onclick = "display('9')">9</button> </td>
+            <td> <button class = "op" value = "*" onclick = "display('X')">X</button> </td>
+        </tr>
+        <tr>
+            <td> <button class = "num" value = "4" onclick = "display('4')">4</button> </td>
+            <td> <button class = "num" value = "5" onclick = "display('5')">5</button> </td>
+            <td> <button class = "num" value = "6" onclick = "display('6')">6</button> </td>
+            <td> <button class = "op" value = "-" onclick = "display('-')">-</button> </td>
+        </tr>
+        <tr>
+            <td> <button class = "num" value = "1" onclick = "display('1')">1</button> </td>
+            <td> <button class = "num" value = "2" onclick = "display('2')">2</button> </td>
+            <td> <button class = "num" value = "3" onclick = "display('3')">3</button> </td>
+            <td> <button class = "op" value = "+" onclick = "display('+')">+</button> </td>
+        </tr>
+        <tr>
+            <td> <button class = "power" value = "On" onclick = "display('On')">On</button> </td>
+            <td> <button class = "num" value = "0" onclick = "display('0')">0</button> </td>
+            <td> <button class = "num" value = "." onclick = "display('.')">.</button> </td>
+            <td> <button class = "op" value = "=" onclick = "calculate()">=</button> </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

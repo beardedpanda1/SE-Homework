@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Finding Elements</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p>
+            What do you want to eat?
+            biryani
+            curry
+            bbq
+            jerk chicken
+            doubles
+        </p>
+       <p id = "Food Choices"></p>
+       
+        
+        <script>
+                let userInput= prompt("Do you want biryani, curry, bbq, jerk chicken, or doubles? ")
+   
+                let arr1= ["biryani","curry","bbq","jerk chicken","doubles"]
+   
+                let food = arr1.filter((getFood) => {
+                return getFood == userInput
+                })
+
+                let indexFinder = arr1.indexOf(userInput)
+
+   
+                console.log(food)
+                document.getElementById("Food Choices").innerHTML=food
+                document.getElementById("Food Choices").innerHTML=indexFinder
+        </script>
+
+    </body>
+</html>

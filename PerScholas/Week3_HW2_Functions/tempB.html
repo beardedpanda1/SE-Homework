@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Converting Fahrenheit to Celsius</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p>Here is your temperature in C</p>
+        <p id = 'temp'></p>
+        
+        <script>
+            let userInput = prompt("Enter Temperature in Fahrenheit Here ").split(" ")
+
+
+            const myFunction =(userInput) => userInput.map(f => ((f*5)/9)-32)
+
+            console.log(myFunction(userInput));
+
+            document.getElementById('temp').innerHTML=myFunction(userInput)
+
+
+        </script>
+    </body>
+</html>

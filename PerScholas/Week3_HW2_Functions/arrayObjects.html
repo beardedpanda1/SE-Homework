@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Objects</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Here are those that go...</h1>
+        <p id = 'objArr'></p>
+        
+        <script>
+            let userInput = prompt("Do you want to go: Swimming, Painting Houses, Basketball, or British Secret Service")
+            let personsList = [
+                {
+                    name: "Sarah Abbot",
+                    gender: "Female",
+                    activity: "Swimming"
+                },
+
+                {
+                    name: "Jimmy Hoffa",
+                    gender: "Male",
+                    activity: "Painting Houses"
+                },
+
+                {
+                    name: "Kobe Bryant",
+                    gender: "Male",
+                    activity: "Basketball"
+                },
+
+                {
+                    name: "Serena Williams",
+                    gender: "Female",
+                    activity: "Tennis"
+                },
+
+                {
+                    name: "James Bond",
+                    gender: "Male",
+                    activity: "British Secret Service"
+                }
+
+            ];
+            const swimmingSelection = (personsList) => personsList.filter(name =>   {
+                return name.activity.toLowerCase() === "swimming"
+            
+            })
+
+            const example = objArr => {
+                let var1 =''
+                objArr.map(hobby => {var1 += `${hobby.name}  ${hobby.activity}  ${hobby.gender}`})
+                return var1}
+
+            document.getElementById('objArr').innerHTML= example(swimmingSelection(personsList))
+        </script>
+    </body>
+</html>
+
+
+

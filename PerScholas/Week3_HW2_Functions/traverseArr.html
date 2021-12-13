@@ -17,11 +17,10 @@
             let arr1 = ["Do", "You", "Know", "How", "To", "Traverse", "An", "Array", "?"]
 
             const traverse = (arr1) =>{
-                let counter = 0;
                 let output="";
-                arr1.map((find) => output += `${find} is at ${counter++} `)
-                    return find
-                    console.log (find)
+                arr1.map((find,index) => output += `${find} is at ${index} `)
+                    return output 
+                    
             }
 
             document.getElementById("displayArray").innerHTML = arr1

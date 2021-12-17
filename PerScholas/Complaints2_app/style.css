@@ -1,0 +1,27 @@
+body {
+    background-color: grey;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.towns{
+    background-color:darkslategray;
+    color:whitesmoke;
+    justify-content:space-between;
+    border-radius: 10%;
+    height: 25px;
+    width: 150px
+
+}
+
+#userInput{
+    height: 25px;
+    width: 500px;
+    margin-left: 0%;
+    margin-right: 15%;
+}
+
+p {
+    
+}

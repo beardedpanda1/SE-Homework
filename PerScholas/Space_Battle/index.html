@@ -1,17 +1,47 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Battle</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id = "attackButton">Attack Alien</button>
+    </header>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        
-        
-        <script src="" async defer></script>
-    </body>
+    <div class="bodyContainer">
+
+        <div id = "messages"></div>
+
+        <div class="mainCharacterView left" >
+                <div class="nameBox">USS Player</div>
+                <div class="playerImage"></div>
+                <div class="playerStats">
+                <div id ="hull"></div> hull <br>
+                <div id ="firepower"></div>fire power <br>
+                <div id ="accuracy"></div> accuracy <br>
+
+                </div>
+
+        </div>
+
+        <div class="mainCharacterView right">
+
+            <div class="nameBox">Enemy</div>
+            <div class="enemyImage"></div>
+                <div class="enemyStats">
+                <div id ="EHull"></div> enemy hull <br>
+                <div id ="EFirePower"></div>enemy fire power <br>
+                <div id ="EAccuracy"></div> enemy accuracy <br>
+                 </div>
+
+        </div>
+    <script src="./app.js"></script>
+</body>
 </html>

@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "JS-experiment"
+		},
+		{
+			"path": "Complaints_app"
+		},
+		{
+			"path": "Complaints2_app"
+		},
+		{
+			"path": "Space_Battle"
+		},
+		{
+			"path": "..\\..\\JMC codeCamp\\Day1"
+		},
+		{
+			"path": "Mod1_Website"
+		},
+		{
+			"path": "..\\..\\Cultural_Bites"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Cultural_Bites"
+	}
+}

@@ -5,7 +5,7 @@ let displayUserAccuracy = document.getElementById("accuracy");
 let displayEnemyHull = document.getElementById("EHull");
 let displayEnemyFirePower = document.getElementById("EFirePower");
 let displayEnemyAccuracy = document.getElementById("EAccuracy");
-let displayMessage1 = document.getElementById("messages")
+let displayMessage1 = document.getElementById("messages");
 
 
 
@@ -23,7 +23,7 @@ const user = {
     let userInput1 = prompt(`Do you want to attack or retreat?`);
     if (this.hull > 0) {
       if (enemyCount > 0) {
-        if (userInput1.toLowerCase() == `attack`) {
+        if (userInput1.toLowerCase() === `attack`) {
           if (this.accuracy > toHit) {
             alien.hull = alien.hull - this.firePower;
             if (alien.hull > 0) {
@@ -37,7 +37,7 @@ const user = {
             alert (` You have missed the alien. `);
             enemy.attack1;
           }
-        } else if (userInput1.toLowerCase() == `retreat`) {
+        } else if (userInput1.toLowerCase() === `retreat`) {
           alert (` You were routed, Game over `);
         } else {
           alert (` Please input appropriate response `);

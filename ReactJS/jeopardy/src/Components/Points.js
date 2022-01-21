@@ -1,28 +1,28 @@
 import React, { useEffect, useState } from "react";
 
-export default function Points() {
+export default function Points(props) {
   let [count, setCount] = useState(0);
-  const increment = () => setCount(count + 100);
-  const decrement = () => setCount(count - 100);
-  const add500 = () => setCount(count + 500);
-  const sub500 = () => setCount(count - 500);
+  const increment = () => setCount(previousState=>previousState + props.points);
+  const decrement = () => setCount(previousState=>previousState - props.points);
+  // const add500 = () => setCount(count + 500);
+  // const sub500 = () => setCount(count - 500);
   const reset = () => setCount(0);
-  let [showCount, SetShowCount] = useState(false);
+  // let [showCount, SetShowCount] = useState(false);
 
-  useEffect(() => {
-    console.log("app component mounted. ");
-  }, []);
+  // useEffect(() => {
+  //   console.log("app component mounted. ");
+  // }, []);
   // we can use when we want to fetch data
   // because when we fetch data only happens once, we only want data.
   // we don't want to fetch data everytime it renders
 
-  useEffect(() => {
-    console.log("testing that count works");
+  // useEffect(() => {
+  //   console.log("testing that count works");
     // idea of side affect
     // you want something to happen
     // you want a function to be a side affect of change
     // this is acting toward the update change
-  }, [count]);
+  // }, [count]);
   // you add a  second parameter
 
   // useEffect(()=>{
@@ -80,11 +80,11 @@ export default function Points() {
   return (
     <div>
       <h3>count: {count}</h3>
-      <button onClick={increment}>add</button>
-      <button onClick={decrement}>subtract</button>
-      <button onClick={add500}>+ 500</button>
-      <button onClick={sub500}>- 500</button>
-      <button onClick={reset}>reset</button>
+      <button className="pointsButton" onClick={increment}> + </button>
+      <button className="pointsButton" onClick={decrement}> - </button>
+      {/* <button onClick={add500}>+ 500</button>
+      <button onClick={sub500}>- 500</button> */}
+      <button className="pointsButton" onClick={reset}>reset</button>
       {/* use state is just a function that returns an array */}
       {/* let arr = useState() [first value is the state, second vlaue is a special method for changing the state similar to set state] */}
       {/* [state, setState] */}

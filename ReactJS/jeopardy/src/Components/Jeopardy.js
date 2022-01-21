@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
+import Points from './Points';
 
 export default function Jeopardy(){
     const[gameshow, setGameshow] = useState([])
@@ -43,19 +44,37 @@ export default function Jeopardy(){
 
         return(
             <div className="game">
-                <h1></h1>
+                <h1 className="title"><center>Jeopardy</center></h1>
                 {
                     gameshow.map((gameshow, index) => (
-                        <div key = {index}>
-                            <button onClick={() => gameshow2()}>Get Question</button> 
-                            <br />
-                            {/* inside the onclick have the axios run again, maybe as a function? */}
-                            Answer: {gameshow.question}
-                            <br />
-                            Catagory: {gameshow.category.title}
-                            <br />
-                            <button onClick = {() => setHideAnswer(!hideAnswer)}>Click me to get answer!</button>
-                            {hideAnswer ? <p>Question: {gameshow.answer}</p>:null}
+                        <div key = {index} className="gameshow">
+                            <center><div className="questionContainer">
+                                <button onClick={() => gameshow2()}>Get Question</button> 
+                                <br />
+                                {/* inside the onclick have the axios run again, maybe as a function? */}
+                                Answer: {gameshow.question}
+                                <br />
+                                Catagory: {gameshow.category.title}
+                                <br />
+                                Value: {gameshow.value}
+                                <br />
+                                <button onClick = {() => setHideAnswer(!hideAnswer)}>Click me to get answer!</button>
+                                {hideAnswer ? <p>Question: {gameshow.answer}</p>:null}
+                            </div></center>
+                        
+                            <table className="points">
+                                <tr>
+                                    <td className="user">User 1: <Points points={gameshow.value}/></td>
+                                    <br />
+                                    <td className="user">User 2: <Points points={gameshow.value}/></td>
+                                    <br />
+                                    <td className="user">User 3: <Points points={gameshow.value}/></td>
+                                    <br />
+                                    <td className="user">User 4: <Points points={gameshow.value}/></td>
+                                    <br />
+                                </tr>
+                            </table>
+                            
                             
                         </div>
                     ))

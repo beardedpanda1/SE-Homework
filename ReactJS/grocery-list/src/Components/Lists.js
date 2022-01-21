@@ -28,6 +28,9 @@ class Lists extends Component{
         return(
             <div>
                 //create function to add anything from input into here in this array
+                <Input oneGrocery={this.addGroceries} />
+
+                {this.state.groceries.map((grocery,index) => {return <Render grocery={grocery} key={index}})}
             </div>
         )
     }

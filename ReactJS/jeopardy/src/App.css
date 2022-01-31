@@ -1,3 +1,7 @@
+body{
+    background-color: blue;
+}
+
 .title{
     display: flexbox;
     align-items: center;
@@ -10,7 +14,7 @@
     display: flexbox;
     align-items: center;
     justify-content: center;
-    margin: 10px 500px 25px 500px;
+    margin: 10px 300px 25px 300px;
     border: 3px solid blue
 
 }
@@ -20,7 +24,7 @@
     max-width: 100%;
     justify-content: space-evenly;
     height: 150px;
-    border: 3px solid green;
+    
     /* list-style:; */
     margin: auto;
     padding: 10px 75px 5px 10px;
@@ -28,18 +32,43 @@
 
 .user{
     /* display: inline; */
-    border: 1px solid black;
+    
     border-collapse: collapse;
-    padding:10px 75px 5px 10px;
-    width:2200px;
+    padding:10px 85px 5px 95px;
+    width:2500px;
     text-align: left;
     justify-content: space-evenly;
     align-items: center;
     margin: center;
-
-    
-    
-
+    color:white;
     /* position: absolute; */
+}
 
+.title{
+    color:white;
+    
+}
+
+.displayPrompt{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    
+}
+
+.displayCategory{
+    font-size: x-large;
+    color:white;
+    
+
+}
+
+.displayValue{
+    font-size: x-large;
+    color:white;
+}
+
+.displayAnswer{
+    font-size: larger;
+    color:white;
 }

@@ -49,17 +49,26 @@ export default function Jeopardy(){
                     gameshow.map((gameshow, index) => (
                         <div key = {index} className="gameshow">
                             <center><div className="questionContainer">
-                                <button onClick={() => gameshow2()}>Get Question</button> 
-                                <br />
-                                {/* inside the onclick have the axios run again, maybe as a function? */}
-                                Answer: {gameshow.question}
-                                <br />
+                                <div className="displayCategory">
                                 Catagory: {gameshow.category.title}
-                                <br />
+                                </div>
+                                
+                                <div className="displayValue">
                                 Value: {gameshow.value}
+                                </div>
                                 <br />
+                                <button onClick={() => gameshow2()}>Get Question</button> 
+                                
+                                {/* inside the onclick have the axios run again, maybe as a function? */}
+                                <div className="displayPrompt">
+                                {gameshow.question}
+                                </div>
+                                <br />
+                                
+                                <div className="displayAnswer">
                                 <button onClick = {() => setHideAnswer(!hideAnswer)}>Click me to get answer!</button>
-                                {hideAnswer ? <p>Question: {gameshow.answer}</p>:null}
+                                {hideAnswer ? <p className="displayAnswer">{gameshow.answer}</p>:null}
+                                </div>
                             </div></center>
                         
                             <table className="points">

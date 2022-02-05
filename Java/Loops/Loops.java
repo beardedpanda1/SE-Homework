@@ -41,7 +41,7 @@ class Loops{
             for(int c=1; c<=r; c++){
                 System.out.print(c);
             }
-            System.out.println();
+            System.out.println(); 
         }
         
     }
